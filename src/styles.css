@@ -14,6 +14,7 @@ body {
     background-color: #f0f0f0; 
 }
 
+/* Heading */
 header {
     display: flex;
     max-height: 500px;
@@ -61,6 +62,7 @@ header {
     transform: scale(1.2);
 }
 
+/* main body/content */
 main {
     padding: 5rem;
     padding-top: 0;
@@ -124,4 +126,27 @@ main {
     margin: 0;
     padding: 1rem;
     font-size: 14px;
+}
+
+/* footer/contact me */
+footer {
+    display: flex;
+    justify-content: space-between;
+    padding: 2rem 5rem;
+    background-color: rgb(74, 151, 214);
+    color: rgb(225, 230, 235);
+}
+
+.contact-heading {
+    font-family: 'Lora', serif;
+    font-size: 26px;
+}
+
+.profile-pic2 {
+    display: flex;
+    max-width: 400px;
+    height: 100%;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    align-self: center;
+    margin: 2rem;
 }
