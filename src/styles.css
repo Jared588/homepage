@@ -92,6 +92,7 @@ main {
 
 .project-container {
     display: grid;
+    justify-items: center;
     grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     gap: 2rem;
 }
@@ -132,7 +133,6 @@ main {
     height: auto;
     cursor: pointer;
     transition: transform 0.3s ease-in-out;
-
 }
 
 .project-link:hover {
@@ -178,4 +178,68 @@ footer {
     height: auto;
     padding-right: 1rem;
     fill: white;
+}
+
+@media (max-width: 800px) {
+    html {
+        width: 100vw;
+    }
+
+    header {
+        flex-direction: column;
+        max-height: fit-content;
+        margin: 0;
+        padding: 2rem;
+    }
+
+    .profile-pic {
+        max-height: 300px;
+    }
+
+    .profile-pic2 {
+        max-width: 200px;
+    }
+
+    .project {
+        width: 100%;
+        height: auto;
+    }
+
+    .project-container {
+        display: grid;
+        grid-template-rows: repeat(auto-fill, minmax(400px, 1fr));
+        gap: 2rem;
+    }
+
+    .project-heading {
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .project-img {
+        height: 300px;
+    }
+
+    .project-title {
+        font-size: 26px;
+    }
+
+    .project-description {
+        font-size: 22px;
+    }
+
+    .project-link {
+        width: 1.8rem;
+    }
+
+    footer {
+        flex-direction: column;
+        padding: 0rem 2rem;
+    }
+}
+
+@media (max-width: 500px) {
+    main {
+        padding: 1rem;
+    }
 }
