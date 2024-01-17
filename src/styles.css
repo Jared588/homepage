@@ -19,6 +19,8 @@ header {
     display: flex;
     max-height: 500px;
     padding: 5rem;
+    position: relative;
+    overflow: hidden;
 }
 
 header::before {
@@ -31,9 +33,9 @@ header::before {
     background-color: #3498db; 
     transform: skewX(70deg);
     z-index: -1;
-    height: 50%;
+    height: 60%;
     width: 200%;
-  }
+}
 
 .about-heading {
     font-family: 'Lora', serif;
