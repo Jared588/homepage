@@ -21,6 +21,20 @@ header {
     padding: 5rem;
 }
 
+header::before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    background-color: #3498db; 
+    transform: skewX(70deg);
+    z-index: -1;
+    height: 50%;
+    width: 200%;
+  }
+
 .about-heading {
     font-family: 'Lora', serif;
 }
@@ -42,6 +56,7 @@ header {
     margin: 2rem 0rem;
     padding: 1rem;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    background-color: #f0f0f0;
 }
 
 .links {
@@ -133,7 +148,7 @@ footer {
     display: flex;
     justify-content: space-between;
     padding: 2rem 5rem;
-    background-color: rgb(74, 151, 214);
+    background-color: #3498db;
     color: rgb(225, 230, 235);
 }
 
